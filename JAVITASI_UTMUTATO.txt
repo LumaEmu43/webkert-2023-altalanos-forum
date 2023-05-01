@@ -1,0 +1,32 @@
+Sajna nem lett a legjobb, de minden ami a 20 ponthoz kellene az elvileg és gyakorlatilag
+is implementálva lett.
+
+A regisztráció kicsit bugos mert nem irányít át máshová a sikeres regisztráció után,
+de ha fennt megjelenik a profil gomb akkor sikeres volt a regelés.
+
+
+Fordítási hiba nincs 	-> 1p 	#Nekem fordul fix
+Futtatási hiba nincs 	-> 1p 	#Fut is :D
+Hosting 		-> 1p 	#https://altalanos-forum.web.app/
+Adatmodellek 		-> 2p	#Az adatmodellek az src/shared/model mappában van
+Alk. felbontása 	-> 1p	#Sehol nem hoszabb 250 sornál és a pages és shared mappában vannak elrendezve
+Reszponzív		-> 2p	#Böngészőben biztosan jó, mobilon lehet vannak kisebb bugok de ott is jónak kellene legyen
+Legalább 2 attr. d.	-> 1p	#Sokat használtam belőlük, biztosan lehet találni valahol a kódban
+Legalább 2 strukt. d. 	-> 1p	#Szintúgy
+Adatátadás		-> 0p	#Nem igazán foglalkoztam ezzel
+10 Material elem	-> 5p	#Az app.module-ban amik importálva vannak azokat biztosan használtam, de a többi modulokban előfordulhat több is
+Adatbevitel formokkal	-> 2p	#Több helyen is, pl.: Login, Register, Profil módosítás, főoldal
+1 Pipe			-> 2p	#Not-found html komponensben használom és a shared/pipes mappában van/vannak megvalósítva
+Lifecycle Hook		-> .5p	#ngIniten kívül nem nagyon használtam
+CRUD megvalósítás	-> 4p	#A shared/services mappában pl.: user.service.ts, mindegyik megvalósítva
+CRUD service		-> 1p	#Kiszerveztem őket a shared/services mappába
+2 komplex firestore	-> 0p	#Nem foglalkoztam ezzel
+4 route			-> 1p	#app-routing.module.ts
+2 AuthGuard		-> 2p	#Szintén app-routing.module.ts a Profile és Thread oldalakra
+Szubjektív pontozás	-> ?p	#Jófejségtől függ (jól esnek a pluszpontok)
+
+-----------------------------------------------
+Össz.	-> 27.5p #A szubjektív értékelés nélkül
+-----------------------------------------------
+
+Ez csak egy útmutató/segítség a pontozáshoz, a valóságtól eltérhet.
