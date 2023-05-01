@@ -1,0 +1,71 @@
+.topic-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.mat-card-content,
+.mat-card-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+/*
+
+.form-field {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-form-field-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-infix {
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.mat-input-element {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mat-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+*/

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "altalanos-forum": {
+      "hosting": {
+        "altalanos_v2": [
+          "altalanos-forum"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "altalanos-forum"
+  }
+}

@@ -1,0 +1,75 @@
+<!--<p>main works!</p>-->
+<div class="container">
+  <div class="side-bar"></div>
+  <div class="middle">
+
+    <!--Login card-->
+    <mat-card class="login-card">
+      <mat-card-header>
+        <mat-card-title>Bejelentkezés</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field appearance="fill">
+          <mat-label for="email">E-mail</mat-label>
+          <input matInput type="text" [formControl]="email">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-content>
+        <mat-form-field appearance="fill">
+          <mat-label for="password">Jelszó</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-raised-button color="primary" type="submit" (click)="login()">Bejelentkezés</button>
+
+    </mat-card>
+
+    <!--Register card-->
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <mat-card class="registration-card">
+        <mat-card-header>
+          <mat-card-title>Regisztráció</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field appearance="fill">
+            <mat-label>Nick név</mat-label>
+            <input matInput type="text" formControlName="username">
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-content>
+          <mat-form-field appearance="fill">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="text" formControlName="email">
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-content>
+          <mat-form-field appearance="fill">
+            <mat-label>Jelszó</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-content>
+          <mat-form-field appearance="fill">
+            <mat-label>Jelszó mégegyszer</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="rePassword">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </mat-card-content>
+        <button mat-raised-button color="primary" type="submit">Regisztráció</button>
+      </mat-card>
+    </form>
+
+  </div>
+  <div class="side-bar"></div>
+</div>

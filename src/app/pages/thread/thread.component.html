@@ -1,0 +1,148 @@
+<!--<p>main works!</p>-->
+<div class="container">
+    <div class="side-bar"></div>
+    <div class="middle">
+
+        <!--Témaválasztó box-->
+        <mat-card class="topic-selector">
+            <mat-card-header>
+                <mat-card-title>
+                    Kérdés címe
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[0].author}}</mat-card-subtitle>
+            <mat-card-content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Consequat nisl vel pretium lectus quam id leo in vitae. Erat imperdiet sed
+                    euismod nisi porta. Morbi tempus iaculis urna id volutpat lacus. Nisl vel pretium lectus quam id leo
+                    in vitae. Massa tempor nec feugiat nisl pretium. Gravida cum sociis natoque penatibus et magnis.
+                    Auctor urna nunc id cursus. Id diam maecenas ultricies mi. Lorem ipsum dolor sit amet. Facilisi
+                    morbi tempus iaculis urna. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Morbi
+                    tristique senectus et netus et malesuada fames. Rutrum tellus pellentesque eu tincidunt tortor.
+                    Cursus eget nunc scelerisque viverra mauris in aliquam.
+
+                    Nulla pellentesque dignissim enim sit. Dictum sit amet justo donec enim. Ipsum dolor sit amet
+                    consectetur adipiscing elit pellentesque. Pellentesque sit amet porttitor eget dolor morbi non.
+                    Tempor nec feugiat nisl pretium fusce id velit ut tortor. Consectetur purus ut faucibus pulvinar
+                    elementum integer enim neque. Sed arcu non odio euismod. Nunc pulvinar sapien et ligula ullamcorper
+                    malesuada. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Arcu ac
+                    tortor dignissim convallis. Gravida neque convallis a cras semper. Pellentesque adipiscing commodo
+                    elit at imperdiet dui accumsan sit.</p>
+            </mat-card-content>
+        </mat-card>
+
+        <!--Random kérdések box-->
+        <mat-card class="topic">
+            <mat-card-header>
+                <a mat-card-title>Válasz 1</a>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[0].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[0].description}}
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>Válasz 2</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[0].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[0].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[1].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[1].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[1].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[2].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[2].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[2].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[3].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[3].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[3].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[0].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[0].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[0].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[0].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[0].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[0].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[1].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[1].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[1].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[2].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[2].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[2].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic">
+            <mat-card-header>
+                <mat-card-title>{{topics[3].title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>by {{topics[3].author}}</mat-card-subtitle>
+            <mat-card-content>
+                {{topics[3].description}}
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="topic" *ngIf="loggedInUser">
+            <mat-card-header>
+                <mat-card-title>Válasz írása...</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-form-field appearance="fill" id="text">
+                    <mat-label>Kezdd el írni a válaszodat...</mat-label>
+                    <textarea matInput></textarea>
+                </mat-form-field>
+            </mat-card-content>
+            <button mat-raised-button color="primary" type="submit" style="margin-bottom: 20px;">Válaszolás</button>
+        </mat-card>
+    </div>
+    <div class="side-bar"></div>
+</div>

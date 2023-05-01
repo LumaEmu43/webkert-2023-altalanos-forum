@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow: hidden;}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 95vh;
+  }
+  
+  .side-bar {
+    width: 20%;
+    height: 100%;
+    background-color: #666565;
+  }
+  
+  .middle {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(236, 192, 110);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .side-bar {
+      width: 100%;
+      height: 20%;
+    }
+    
+    .middle {
+      width: 100%;
+      height: 60%;
+    }
+  }
+  
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

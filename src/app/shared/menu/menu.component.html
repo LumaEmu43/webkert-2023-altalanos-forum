@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Nagyon Gyakori Kérdések</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/main" (click)="onClick()">Főoldal</button>
+    <span class="spacer" *ngIf="loggedInUser"></span>
+    <button mat-button routerLink="/profile" (click)="onClick()" *ngIf="loggedInUser">Profil</button>
+    <span class="spacer" *ngIf="!loggedInUser"></span>
+    <button mat-button routerLink="/auth" *ngIf="!loggedInUser">Bejelentkezés</button>
+    <span class="spacer" *ngIf="loggedInUser"></span>
+    <button mat-button routerLink="/main" *ngIf="loggedInUser" (click)="logout()">Kijelentkezés</button>
+  </mat-toolbar-row>
+</mat-toolbar>
